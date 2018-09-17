@@ -1,0 +1,14 @@
+.todo-id{
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.todo-title{
+    font-size:30px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.todo-desc{
+    font-size:20px;
+}

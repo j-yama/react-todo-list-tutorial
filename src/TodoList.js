@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Todo from './Todo';
+import './css/TodoList.css'
 
 class TodoList extends Component {
 
@@ -12,9 +13,11 @@ class TodoList extends Component {
         );
 
         return (
-            <ul>
-                {todos}
-            </ul>
+            <div class="container todo-list">
+                <ul class="list-group">
+                    {todos}
+                </ul>
+            </div>
         );
     };
 }
