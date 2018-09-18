@@ -1,3 +1,10 @@
 .todo-form{
     margin-top: 30px;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.todo-form Button{
+    text-align: center;
 }
