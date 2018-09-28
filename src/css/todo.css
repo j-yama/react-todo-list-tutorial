@@ -12,3 +12,8 @@
 .todo-desc{
     font-size:20px;
 }
+
+li.done{
+    background-color: #dddddd;
+    color: #999;
+}

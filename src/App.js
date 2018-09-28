@@ -55,13 +55,24 @@ class App extends Component {
 
   }
 
+  setTodoStatus(clickTodo) {
+    const todos = this.state.todos.slice();
+    const todo = todos[clickTodo.id - 1];
+    todo.done = !todo.done;
+    todos[clickTodo.id - 1] = todo;
+
+    this.setState({ todos });
+  }
+
   render() {
     return (
       <div className="App">
         <h1>todoアプリを作ってみた</h1>
+        {/* TODO: bindをアロー関数にする */}
         <TodoForm handleSubmit={this.handleSubmit.bind(this)} />
         <TodoList
           todos={this.state.todos}
+          setTodoStatus={this.setTodoStatus.bind(this)}
         />
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
